@@ -117,3 +117,112 @@
 .img-box a span:first-child{
     margin: 30px;
 }
+
+/* hot */
+.hot-cube{
+    width: 1280px;
+    height: 811px;
+    margin: 0 auto;
+}
+.hot-tit{
+    margin: 90px 0 36px 0;
+}
+.hot-tit h1{
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+.hot-tit p{
+    font-size: 18px;
+    color: #999;
+    padding-top: 8px;
+}
+.hot-tit p a>span{
+    font-size: 16px;
+    color: #333;
+    float: right;
+}
+.hot-shop-box{
+    display: flex;
+}
+.hot-shop{
+    margin-right: 16px;
+}
+.hot-shop:last-child{
+    margin-right:0px
+}
+.hot-shop-img01{
+    width: 416px;
+    height: 528px;
+}
+.hot-shop-img-box{
+    width: 416px;
+    height: 340px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hot-shop-img01 img{
+    width: 272px;
+    height: 272px;
+}
+.hot-shop-txt-box{
+    width: 416px;
+    height: 156px;
+    margin-top: 20px;
+}
+.hot-shop-txt-box h2{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 7px;
+}
+.hot-shop-txt-box del{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #eee;
+}
+.hot-shop-txt-box span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FC454C;
+}
+.hot-shop-txt-box h3{
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+.star-box{
+    position:relative;
+    display: flex;
+}
+.star{
+    width: 75px;
+    height: 15px;
+    background: url(../img/ico_grade.png) no-repeat 0 -64px;
+    background-size: 100%;
+}
+.hot-shop-txt-box ul{
+    display: flex;
+    font-size: 13px;
+    padding-left: 5px;
+    line-height: 12px;
+}
+.hot-shop-txt-box ul li:nth-of-type(2){
+    padding-left: 9px;
+}
+.hot-shop-txt-box ul li:nth-of-type(1)::after{
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    position: absolute;
+    left: 102px;
+    top: 1px;
+}
+.hot-shop-txt-box p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #999999;
+}
