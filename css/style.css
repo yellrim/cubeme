@@ -8,7 +8,11 @@
     color: #666666;
     font-size: 14px;
 }
-
+.line{
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+}
 .header{
     width: 1744px;
     height: 125px;
@@ -146,7 +150,7 @@
     display: flex;
 }
 .hot-shop{
-    margin-right: 16px;
+    margin: 0 16px 90px 0;
 }
 .hot-shop:last-child{
     margin-right:0px
@@ -191,7 +195,7 @@
 .hot-shop-txt-box h3{
     font-size: 18px;
     display: inline-block;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 .star-box{
     position:relative;
@@ -225,4 +229,87 @@
     font-size: 15px;
     line-height: 1.6;
     color: #999999;
+}
+/* wait */
+.wait-cube{
+    width: 1280px;
+    height: 515px;
+    margin: 0 auto;
+}
+.wait-tit{
+    width: 1280px;
+    height: 81px;
+    text-align: center;
+    margin: 90px 0 36px 0;
+}
+.wait-tit h1{
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.7em;
+    background-color: #fa3826;
+    border-radius: 30px;
+    color: #fff;
+    margin: 0 auto;
+}
+.wait-tit p{
+    font-size: 18px;
+    color: #999;
+    padding: 8px 0 36px 0;
+}
+.event-container{
+    display: flex;
+}
+.wait-event-box{
+    width: 1280px;
+    height: 218px;
+}
+.wait-event{
+    width: 350px;
+    height: 158px;
+    background-color: #fceeed;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    margin-right: 26px;
+}
+.wait-event-img-box01{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/icon_wallet.png) no-repeat center;
+    background-color: #fa5c4e;
+    margin: 0 auto;
+}
+.wait-event-img-box02{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/icon_coin.png) no-repeat center;
+    background-color: #fa5c4e;
+    margin: 0 auto;
+}   
+.wait-event-img-box03{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/icon_hands.png) no-repeat center;
+    background-color: #fa5c4e;
+    margin: 0 auto;
+}    
+.wait-event-txt-box{
+    width: 350px;
+    height: 68px;
+    margin-top: 12px
+}
+.wait-event-txt-box p{
+    color: #000;
+    font-size: 26px;
+    text-align: center;
+}
+.wait-event-txt-box p>span{
+    font-weight: 700;
 }
