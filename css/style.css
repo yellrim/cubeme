@@ -8,6 +8,10 @@
     color: #666666;
     font-size: 14px;
 }
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 .line{
     width: 100%;
     height: 20px;
@@ -131,7 +135,8 @@
 .hot-tit{
     margin: 90px 0 36px 0;
 }
-.hot-tit h1{
+.hot-tit h1,
+.goods h1{
     font-size: 28px;
     color: #333;
     font-weight: 700;
@@ -176,23 +181,27 @@
     height: 156px;
     margin-top: 20px;
 }
-.hot-shop-txt-box h2{
+.hot-shop-txt-box h2,
+.goods-txt-box h2{
     font-size: 18px;
     color: #333;
     margin-bottom: 7px;
 }
-.hot-shop-txt-box del{
+.hot-shop-txt-box del,
+.goods-txt-box del{
     display: block;
     font-size: 18px;
     font-weight: 500;
     color: #eee;
 }
-.hot-shop-txt-box span{
+.hot-shop-txt-box span,
+.goods-txt-box span{
     font-size: 18px;
     font-weight: 500;
     color: #FC454C;
 }
-.hot-shop-txt-box h3{
+.hot-shop-txt-box h3,
+.goods-txt-box h3{
     font-size: 18px;
     display: inline-block;
     margin-bottom: 15px;
@@ -207,16 +216,19 @@
     background: url(../img/ico_grade.png) no-repeat 0 -64px;
     background-size: 100%;
 }
-.hot-shop-txt-box ul{
+.hot-shop-txt-box ul,
+.goods-txt-box ul{
     display: flex;
     font-size: 13px;
     padding-left: 5px;
     line-height: 12px;
 }
-.hot-shop-txt-box ul li:nth-of-type(2){
+.hot-shop-txt-box ul li:nth-of-type(2),
+.goods-txt-box ul li:nth-of-type(2){
     padding-left: 9px;
 }
-.hot-shop-txt-box ul li:nth-of-type(1)::after{
+.hot-shop-txt-box ul li:nth-of-type(1)::after,
+.goods-txt-box ul li:nth-of-type(1)::after{
     content: '';
     width: 1px;
     height: 12px;
@@ -225,11 +237,13 @@
     left: 102px;
     top: 1px;
 }
-.hot-shop-txt-box p{
+.hot-shop-txt-box p,
+.goods-txt-box p{
     font-size: 15px;
     line-height: 1.6;
     color: #999999;
 }
+
 /* wait */
 .wait-cube{
     width: 1280px;
@@ -372,13 +386,239 @@
 .event-txt-box02{
     padding-left: 40px;
 }
-.event-txt-box h2{
+.event-box h2{
     font-size: 22px;
     font-weight: 700;
     color: #333;
 }
-.event-txt-box p{
+.event-box p{
     font-size: 18px;
     color: #999;
     margin-top: 8px;
+}
+
+/* headline */
+.headline{
+    width: 100%;
+    height: 493px;
+    background-color: #ffebea;
+}
+.headline-tit{
+    padding: 90px 0 15px 0;
+}
+.headline-tit h1{
+    width: 359px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 50px;
+    background-color: #fa3826;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+.headline-img-box{
+    width: 600px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+}
+.headline-img-box ul{
+    width: 600px;
+    height: 250px;
+    display: flex;
+    margin: 0 auto;
+}
+.headline-img-box ul li>img{
+    width: 200px;
+    height: 250px;
+}
+/* .headline-slide-btn{
+    width: 627px;
+    height: 38px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.headline-slide-btn span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f9cec8;
+    padding-right: 12px;
+} */
+
+/* goods */
+.goods{
+    width: 1280px;
+    height: 735px;
+    margin: 0 auto;
+}
+.goods-tit-container{
+    width: 1280px;
+    height: 68px;
+    margin: 90px 0 36px 0;
+}
+.goods-tit-container p{
+    margin-top: 8px;
+}
+.goods-goods-container{
+    width: 1280px;
+    height: 451px;
+    display: flex;
+}
+.goods-box{
+    width: 243px;
+    height: 451px;
+    margin-right: 15px;
+}
+.goods-box:last-child{
+    margin-right: 0px;
+}
+.goods-img-box{
+    width: 243px;
+    height: 264px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.goods-img-box img{
+    width: 224px;
+    height: 224px;
+}
+.banner{
+    width: 1721px;
+    height: 500px;
+    margin: 0 auto;
+}
+.banner img{
+    width: 1721px;
+    height: 374px;
+    padding-top: 20px;
+}
+
+/* footer */
+.footer{
+    width: 1881px;
+    height: 314px;
+    background-color: #000;
+    padding: 80px 80px 92px 80px;
+}
+.footer-container{
+    width: 1801px;
+    height: 280px;
+}
+.left-container{
+    display: inline-block;
+}
+.left-container a>img{
+    width: 140px;
+    height: 35px;
+}
+.left-container ul{
+    display: flex;
+    margin: 40px 0 33px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.left-container ul li{
+    padding-right: 10px;
+}
+.left-container ul li:nth-child(4){
+    font-weight: 700;
+    color: #fff;
+}
+.left-container ul li em{
+    padding-left:10px;
+    color: #767676;
+}
+.left-container p{
+    font-size: 14px;
+    color: #767676;
+    line-height: 1.9;
+}
+.left-container p>em{
+    position: relative;
+    margin: 0 10px;
+}
+.left-container p>em::before{
+    content: '';
+    width: 1px;
+    height: 11px;
+    background-color: #666666;
+    position: absolute;
+    top: 6px;
+}
+.right-container{
+    display: inline-block;
+    padding-left: 779px;
+    position: absolute;
+}
+.right-container ul{
+    display: flex;
+    margin-bottom: 32px;
+}
+.right-container ul li{
+    color: #fff;
+    font-weight: 500;
+    margin-right: 58px;
+    line-height: 2.5em;
+}
+.right-container ul li:last-child{
+    margin-right: 0px;
+}
+.right-txt-box{
+    width: 400px;
+    height: 147px;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding-top: 15px;
+}
+.right-txt-box h1{
+    font-weight: 500;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+.right-txt-box p{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.right-txt-box a{
+    font-size: 13px;
+    color: #999;
+}
+.sns-container{
+    display: flex;
+    float: right;
+    margin-top: 33px;
+}
+.sns-container select{
+    width: 62px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance:none;
+    text-align: center;
+}
+.facebook,.instar{
+    width: 26px;
+    height: 26px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+.facebook i{
+    font-size: 15px;
+    color: #fff;
 }
