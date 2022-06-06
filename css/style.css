@@ -122,16 +122,25 @@ body{
     padding-top: 120px;
     padding-left: 80px;
 }
-.slider{
+.slide { 
+    position:relative;
     width: 1150px;
     height: 810px;
+}
+.slider-div {
+    /* slick을 적용시킬 요소 */
     display: flex;
     overflow: hidden;
 }
-.main .slider a img{
+.item {
+    /* 슬라이드 되어야 할 아이템 */
     width: 1150px;
     height: 810px;
     position: relative;
+}
+.item img{
+    width: 1150px;
+    height: 810px;
 }
 .img-box .img{
     width: 580px;
@@ -156,6 +165,14 @@ body{
 .img-box a span:first-child{
     margin: 30px;
 }
+.slider-nav{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
 .prev{
     width: 40px;
     height: 40px;
@@ -166,8 +183,8 @@ body{
     border-right: 1px solid #fff;
     transform: translateY(-50%) rotate(225deg);
     position: absolute;
-    left: 7%;
-    top: 55%;
+    left: 5%;
+    top: 50%;
     cursor: pointer;
 }
 .next{
@@ -180,8 +197,8 @@ body{
     border-bottom: 1px solid #fff;
     transform: translateY(-50%) rotate(225deg);
     position: absolute;
-    right: 38%;
-    top: 55%;
+    right: 5%;
+    top: 50%;
     cursor: pointer;
 }
 /* hot */
@@ -492,19 +509,6 @@ body{
     width: 200px;
     height: 250px;
 }
-/* .headline-slide-btn{
-    width: 627px;
-    height: 38px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-}
-.headline-slide-btn span{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #f9cec8;
-    padding-right: 12px;
-} */
 
 /* goods */
 .goods{
