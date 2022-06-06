@@ -12,19 +12,7 @@
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="nav">
-                <img src="./img/logo-cubeme-text.png" alt="큐브미 로고 이미지">
-                <ul>
-                    <li><a href="#" title="모든 상품">모든 상품</a></li>
-                    <li><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
-                    <li><a href="#" title="이벤트">이벤트</a></li>
-                    <li><a href="#" title="매거진">매거진</a></li>
-                    <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
-                    <li><a href="#" title="매장안내">매장안내</a></li>
-                    <li><a href="#" title="고객센터">고객센터</a></li>
-                </ul>
-            </div>
-            <div class="login-search">
+            <div class="login-container">
                 <div class="login">
                     <ul>
                         <li><a href="#">회원가입</a></li>
@@ -32,9 +20,26 @@
                         <li><a href="#">고객센터</a></li>
                     </ul>
                 </div>
-                <div class="search">
-                    <input id="search-text" type="text">
-                    <img src="./img/ico-shopping-cart.svg" alt="쇼핑 카드 이미지">
+            </div>
+            <div class="nav-search">
+                <div class="nav">
+                    <img src="./img/logo-cubeme-text.png" alt="큐브미 로고 이미지">
+                    <img class="img hidden" src="./img/logo-cubeme-symbol2.svg" alt="큐브미 로고 심볼 이미지">
+                    <ul>
+                        <li><a href="#" title="모든 상품">모든 상품</a></li>
+                        <li><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
+                        <li><a href="#" title="이벤트">이벤트</a></li>
+                        <li><a href="#" title="매거진">매거진</a></li>
+                        <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
+                        <li><a href="#" title="매장안내">매장안내</a></li>
+                        <li><a href="#" title="고객센터">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <div class="search">
+                        <input id="search-text" type="text">
+                        <img src="./img/ico-shopping-cart.svg" alt="쇼핑 카드 이미지">
+                    </div>
                 </div>
             </div>
         </header>
@@ -148,7 +153,9 @@
                 </div>
             </div>
         </section>
-        <div class="line"></div>
+        <div class="line">
+
+        </div>
         <section class="sec wait-cube">
             <div class="wait-tit">
                 <h1>잠시만요!</h1>
@@ -193,7 +200,9 @@
                 </div>
             </div>
         </section>
-        <div class="line"></div>
+        <div class="line">
+
+        </div>
         <section class="sec event">
             <div class="event-tit-box">
                 <h1>진행 중인 이벤트
@@ -439,5 +448,28 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const loginBar = document.querySelector('.login');
+        const searchBar = document.querySelector('.search');
+
+        const hiddenClassname = "hidden";
+
+        function navHidden(){
+            loginBar.classList.add(hiddenClassname);
+
+            const header = document.querySelector('.header');
+            const headerLogo = document.querySelector('.header img');
+            const headerminiLogo = document.querySelector('.header .img');
+            const navHeight = document.querySelector('.nav-search');
+            header.style.height = '70px';
+            header.style.boxShadow = '0px 1px 1px rgba(0,0,0,0.2)';
+            navHeight.style.marginTop = '15px';
+            header.style.backgroundColor = 'rgba(255,255,255,0.9)'; 
+            headerLogo.classList.add(hiddenClassname);
+            headerminiLogo.classList.remove(hiddenClassname);
+        }
+        document.addEventListener('scroll',navHidden);
+    </script>
 </body>
 </html>

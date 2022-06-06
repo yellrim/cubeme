@@ -12,49 +12,70 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+.hidden{
+    display: none;
+}
 .line{
     width: 100%;
     height: 20px;
     background-color: #eee;
 }
 .header{
-    width: 1744px;
+    width: 1824px;
     height: 125px;
     padding-left: 80px;
-    display: flex;
     position: fixed;
     z-index: 11;
+
+    transition: 0.5s;
+}
+.nav-search{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 85px;
+    align-items: center;
+    margin-top: 70px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 235px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.search img{
+    width: 30px;
+    height: 30px;
 }
 .header .nav{
-    margin-top: 112px;
     display: flex;
 }
-.header .nav img{
+.nav-search .nav img{
     width: 126px;
     height: 35px;
     margin: -10px 0;
 }
-.header .nav ul{
+.nav-search .nav ul{
     display: flex;
 }
-.header .nav ul li{
+.nav-search .nav ul li{
     color: #333333;
     font-size: 16px;
     margin-left: 54px;
 }
-.header .nav ul li a{
+.nav-search .nav ul li a{
     padding: 30px 0;
 }
-.login-search{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-end;
-    margin-top: 2px;
-    margin-left: 475px;
-}
 .login{
-    margin: 35px 0;
+    margin: 20px 0 0 0;
     font-size: 12px;
+    float: right;
+    padding-right: 85px;
 }
 .login ul{
     display: flex;
@@ -76,26 +97,11 @@ body{
     right: -10px;
     top: 4px;
 }
-.search{
-    display: flex;
-    align-items: center;
-}
-.search input{
-    width: 235px;
-    height: 35px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 20px;
-}
-.search img{
-    width: 30px;
-    height: 30px;
-}
 
 /* main */
 .main{
     display: flex;
-    padding-top: 168px;
+    padding-top: 120px;
     padding-left: 80px;
 }
 .main .slider a img{
