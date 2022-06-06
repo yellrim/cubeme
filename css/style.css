@@ -26,7 +26,6 @@ body{
     padding-left: 80px;
     position: fixed;
     z-index: 11;
-
     transition: 0.5s;
 }
 .nav-search{
@@ -97,16 +96,42 @@ body{
     right: -10px;
     top: 4px;
 }
-
+/* sub메뉴 */
+.sub-nav{
+    position: absolute;
+    left: 0%;
+    top: 95%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.sub-nav ul{
+    display: flex;
+}
+.sub-nav li{
+    margin-right: 30px;
+    font-size: 18px;
+}
+.sub-nav li:first-child{
+    margin-left: 240px;
+}
 /* main */
 .main{
     display: flex;
     padding-top: 120px;
     padding-left: 80px;
 }
+.slider{
+    width: 1150px;
+    height: 810px;
+    display: flex;
+    overflow: hidden;
+}
 .main .slider a img{
     width: 1150px;
     height: 810px;
+    position: relative;
 }
 .img-box .img{
     width: 580px;
@@ -131,7 +156,34 @@ body{
 .img-box a span:first-child{
     margin: 30px;
 }
-
+.prev{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-bottom: none;
+    border-left: none;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: translateY(-50%) rotate(225deg);
+    position: absolute;
+    left: 7%;
+    top: 55%;
+    cursor: pointer;
+}
+.next{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: translateY(-50%) rotate(225deg);
+    position: absolute;
+    right: 38%;
+    top: 55%;
+    cursor: pointer;
+}
 /* hot */
 .hot-cube{
     width: 1280px;

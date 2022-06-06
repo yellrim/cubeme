@@ -26,13 +26,23 @@
                     <img src="./img/logo-cubeme-text.png" alt="큐브미 로고 이미지">
                     <img class="img hidden" src="./img/logo-cubeme-symbol2.svg" alt="큐브미 로고 심볼 이미지">
                     <ul>
-                        <li><a href="#" title="모든 상품">모든 상품</a></li>
+                        <li class="subbar"><a href="#" title="모든 상품">모든 상품</a></li>
                         <li><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
                         <li><a href="#" title="이벤트">이벤트</a></li>
                         <li><a href="#" title="매거진">매거진</a></li>
                         <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
                         <li><a href="#" title="매장안내">매장안내</a></li>
                         <li><a href="#" title="고객센터">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="sub-nav hidden">
+                    <ul>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">워터플러스</a></li>
+                        <li><a href="#">콜라겐</a></li>
+                        <li><a href="#">다이어트</a></li>
+                        <li><a href="#">이너뷰티</a></li>
+                        <li><a href="#">키즈</a></li>
                     </ul>
                 </div>
                 <div class="search-container">
@@ -44,13 +54,19 @@
             </div>
         </header>
         <main class="main">
-            <div class="slider">
-                <a><img src="./img/slide01.jpg" alt="슬라이드 이미지1"></img></a>
-                <!-- <a><img src="./img/slide02.jpg" alt="슬라이드 이미지2"></img></a>
-                <a><img src="./img/slide03.jpg" alt="슬라이드 이미지3"></img></a>
-                <a><img src="./img/slide04.jpg" alt="슬라이드 이미지4"></img></a>
-                <a><img src="./img/slide05.jpg" alt="슬라이드 이미지5"></img></a>
-                <a><img src="./img/slide06.jpg" alt="슬라이드 이미지6"></img></a> -->
+            <div class="slide">
+                <div class="slider">
+                    <a><img src="./img/slide01.jpg" alt="슬라이드 이미지1"></img></a>
+                    <a><img src="./img/slide02.jpg" alt="슬라이드 이미지2"></img></a>
+                    <a><img src="./img/slide03.jpg" alt="슬라이드 이미지3"></img></a>
+                    <a><img src="./img/slide04.jpg" alt="슬라이드 이미지4"></img></a>
+                    <a><img src="./img/slide05.jpg" alt="슬라이드 이미지5"></img></a>
+                    <a><img src="./img/slide06.jpg" alt="슬라이드 이미지6"></img></a>
+                </div>
+                <div class="slider-btn">
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
             </div>
             <div class="img-box">
                 <div class="img">
@@ -450,26 +466,75 @@
     </div>
 
     <script>
-        const loginBar = document.querySelector('.login');
-        const searchBar = document.querySelector('.search');
+        // // nav
+        // const loginBar = document.querySelector('.login');
+        // const searchBar = document.querySelector('.search');
 
-        const hiddenClassname = "hidden";
+        // const hiddenClassname = "hidden";
 
-        function navHidden(){
-            loginBar.classList.add(hiddenClassname);
+        // function navHidden(){
+        //     loginBar.classList.add(hiddenClassname);
 
-            const header = document.querySelector('.header');
-            const headerLogo = document.querySelector('.header img');
-            const headerminiLogo = document.querySelector('.header .img');
-            const navHeight = document.querySelector('.nav-search');
-            header.style.height = '70px';
-            header.style.boxShadow = '0px 1px 1px rgba(0,0,0,0.2)';
-            navHeight.style.marginTop = '15px';
-            header.style.backgroundColor = 'rgba(255,255,255,0.9)'; 
-            headerLogo.classList.add(hiddenClassname);
-            headerminiLogo.classList.remove(hiddenClassname);
-        }
-        document.addEventListener('scroll',navHidden);
+        //     const header = document.querySelector('.header');
+        //     const headerLogo = document.querySelector('.header img');
+        //     const headerminiLogo = document.querySelector('.header .img');
+        //     const navHeight = document.querySelector('.nav-search');
+        //     header.style.height = '70px';
+        //     header.style.boxShadow = '0px 1px 1px rgba(0,0,0,0.2)';
+        //     navHeight.style.marginTop = '15px';
+        //     header.style.backgroundColor = 'rgba(255,255,255,0.9)'; 
+        //     headerLogo.classList.add(hiddenClassname);
+        //     headerminiLogo.classList.remove(hiddenClassname);
+        // }
+        // document.addEventListener('scroll',navHidden);
+
+        // // sub-nav
+        // const subBar = document.querySelector('.subber');
+        // const subNav = document.querySelector('.sub-nav');
+        
+        // function subNavOver(){
+        //     subNav.classList.remove(hiddenClassname);
+        // }
+        // subBar.addEventListener('mouseover',subNavOver);
+        
+        //slider
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                // var i;
+                var slides = document.querySelectorAll('.slider a>img');
+
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 5000);
+            }
+
+        //headline slider  
+            var slideIndex = 0;
+            headlineSlides();
+
+            function headlineSlides() {
+                // var i;
+                var showslides = document.querySelectorAll('.headline-img-box ul');
+                var dots = document.getElementsByClassName("dot");
+                
+                for (i = 0; i < showslides.length; i++) {
+                    showslides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > showslides.length) {slideIndex = 1}    
+                // for (i = 0; i < dots.length; i++) {
+                //     dots[i].className = dots[i].className.replace(" active", "dot");
+                // }
+                showslides[slideIndex-1].style.display = "block";  
+                // dots[slideIndex-1].className += " active";
+                setTimeout(headlineSlides, 2000);
+            }
     </script>
 </body>
 </html>
