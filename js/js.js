@@ -21,14 +21,14 @@
     }
     document.addEventListener('scroll',navHidden);
 
-    // sub-nav
-    const subBar = document.querySelector('.subber');
-    const subNav = document.querySelector('.sub-nav');
+    // // sub-nav
+    // const subBar = document.querySelector('.subber');
+    // const subNav = document.querySelector('.sub-nav');
     
-    function subNavOver(){
-        subNav.classList.remove(hiddenClassname);
-    }
-    subBar.addEventListener('mouseover',subNavOver);
+    // function subNavOver(){
+    //     subNav.classList.remove(hiddenClassname);
+    // }
+    // subBar.addEventListener('mouseover',subNavOver);
 
 
     // 슬릭슬라이드
