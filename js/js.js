@@ -1,56 +1,116 @@
+// main
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let behind = document.getElementById('behind');
+let text = document.getElementById('text');
+let btn = document.getElementById('btn');
+let front = document.getElementById('front');
+let header = document.querySelector('header');
 
-    // nav
-    const loginBar = document.querySelector('.login');
-    const searchBar = document.querySelector('.search');
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 1.05 + 'px';
+    behind.style.top = value * 0.5 + 'px';
+    front.style.top = value * 0 + 'px';
+    text.style.marginRight = value * 4 + 'px';
+    text.style.marginTop = value * 1.5 + 'px';
+    btn.style.marginTop = value * 1.5 + 'px';
+    header.style.top = value * 0.5 + 'px';
+})
 
-    const hiddenClassname = "hidden";
+// history opne,close
+let history1 = document.getElementById('history1');
+let portfolio1 = document.getElementById('portfolio1');
+let history2 = document.getElementById('history2');
+let portfolio2 = document.getElementById('portfolio2');
+let history3 = document.getElementById('history3');
+let portfolio3 = document.getElementById('portfolio3');
+let history4 = document.getElementById('history4');
+let portfolio4 = document.getElementById('portfolio4');
+let history5 = document.getElementById('history5');
+let portfolio5 = document.getElementById('portfolio5');
+let history6 = document.getElementById('history6');
+let portfolio6 = document.getElementById('portfolio6');
+let history7 = document.getElementById('history7');
+let portfolio7 = document.getElementById('portfolio7');
+let history8 = document.getElementById('history8');
+let portfolio8 = document.getElementById('portfolio8');
+let history9 = document.getElementById('history9');
+let portfolio9 = document.getElementById('portfolio9');
 
-    function navHidden(){
-        loginBar.classList.add(hiddenClassname);
+// open
+function historyOpen1(){
+    history1.style.display = 'block';
+    portfolio1.style.marginLeft = '170px';
+}
+function historyOpen2(){
+    history2.style.display = 'block';
+    portfolio2.style.marginLeft = '170px';
+}
+function historyOpen3(){
+    history3.style.display = 'block';
+    portfolio3.style.marginLeft = '170px';
+}
+function historyOpen4(){
+    history4.style.display = 'block';
+    portfolio4.style.marginLeft = '170px';
+}
+function historyOpen5(){
+    history5.style.display = 'block';
+    portfolio5.style.marginLeft = '170px';
+}
+function historyOpen6(){
+    history6.style.display = 'block';
+    portfolio6.style.marginLeft = '170px';
+}
+function historyOpen7(){
+    history7.style.display = 'block';
+    portfolio7.style.marginLeft = '170px';
+}
+function historyOpen8(){
+    history8.style.display = 'block';
+    portfolio8.style.marginLeft = '170px';
+}
+function historyOpen9(){
+    history9.style.display = 'block';
+    portfolio9.style.marginLeft = '170px';
+}
 
-        const header = document.querySelector('.header');
-        const headerLogo = document.querySelector('.header img');
-        const headerminiLogo = document.querySelector('.header .img');
-        const navHeight = document.querySelector('.nav-search');
-        header.style.height = '70px';
-        header.style.boxShadow = '0px 1px 1px rgba(0,0,0,0.2)';
-        navHeight.style.marginTop = '15px';
-        header.style.backgroundColor = 'rgba(255,255,255,0.9)'; 
-        headerLogo.classList.add(hiddenClassname);
-        headerminiLogo.classList.remove(hiddenClassname);
-    }
-    document.addEventListener('scroll',navHidden);
-
-    // // sub-nav
-    // const subBar = document.querySelector('.subber');
-    // const subNav = document.querySelector('.sub-nav');
-    
-    // function subNavOver(){
-    //     subNav.classList.remove(hiddenClassname);
-    // }
-    // subBar.addEventListener('mouseover',subNavOver);
-
-
-    // 슬릭슬라이드
-    $(function(){
-        $('.slider-div').slick({
-        slide: 'div',   //슬라이드 되어야 할 div  
-        infinite : true,  //무한 반복 옵션   
-        slidesToShow : 1,   // 한 화면에 보여질 컨텐츠 개수
-        slidesToScroll : 1,   //스크롤 한번에 움직일 컨텐츠 개수
-        speed : 100,   // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-        arrows : true,    // 옆으로 이동하는 화살표 표시 여부
-        autoplay : true,      // 자동 스크롤 사용 여부
-        autoplaySpeed : 5000,    // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
-        pauseOnHover : true,    // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정
-        vertical : false,   // 세로 방향 슬라이드 옵션
-        prevArrow : ".prev",    // 이전 화살표 모양 설정
-        nextArrow : ".next",    // 다음 화살표 모양 설정
-        draggable : true,   //드래그 가능 여부 
-        centerMode: false,  //센터모드 (active된 요소가 화면 가운데로,slidesToShow 갯수가 짝수 일 경우 아이템의 경계선이 가운데로 옴)
-        customPaging : function(slider, i) {
-        var thumb = $(slider.$slides[i]).find('.slider-nav');
-        return thumb;
-        }
-        });
-    })
+// close
+function historyClose1(){
+    history1.style.display = 'none';
+    portfolio1.style.marginLeft = '-170px';
+}
+function historyClose2(){
+    history2.style.display = 'none';
+    portfolio2.style.marginLeft = '-170px';
+}
+function historyClose3(){
+    history3.style.display = 'none';
+    portfolio3.style.marginLeft = '-170px';
+}
+function historyClose4(){
+    history4.style.display = 'none';
+    portfolio4.style.marginLeft = '-170px';
+}
+function historyClose5(){
+    history5.style.display = 'none';
+    portfolio5.style.marginLeft = '-170px';
+}
+function historyClose6(){
+    history6.style.display = 'none';
+    portfolio6.style.marginLeft = '-170px';
+}
+function historyClose7(){
+    history7.style.display = 'none';
+    portfolio7.style.marginLeft = '-170px';
+}
+function historyClose8(){
+    history8.style.display = 'none';
+    portfolio8.style.marginLeft = '-170px';
+}
+function historyClose9(){
+    history9.style.display = 'none';
+    portfolio9.style.marginLeft = '-170px';
+}
