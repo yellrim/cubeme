@@ -31,6 +31,29 @@
         }
     })
 
+    // sub-nav
+    const navall = document.querySelector('.subbar');
+    const subNavul = document.querySelector('.sub-navul li a');
+
+    navall.addEventListener('mouseover',function(){
+        const subNav = document.querySelector('.sub-nav');
+        // subNavul.classList.remove("hidden");
+        subNav.classList.remove("hidden");
+    })
+    subNavul.addEventListener('mouseover',function(){
+        const subNav = document.querySelector('.sub-nav');
+        subNav.classList.remove("hidden");
+    })
+    subNavul.addEventListener('mouseout',function(){
+        const subNav = document.querySelector('.sub-nav');
+        subNav.classList.add("hidden");
+    })
+    // navall.addEventListener('mouseout',function(){
+    //     const subNav = document.querySelector('.sub-nav');
+    //     subNav.classList.add("hidden");
+    // })
+
+
 
     // 슬릭슬라이드
     $(function(){
