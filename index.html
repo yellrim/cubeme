@@ -3,262 +3,520 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title>PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>아름답고 건강함을 추구하는 이너뷰티 브랜드 - 큐브미 (CUBE ME)</title>
 </head>
 <body>
+    <div class="wrap">
         <header class="header">
-            <a href="#" class="logo">YERIM</a>
-            <ul>
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#sec1">ABOUT ME</a></li>
-                <li><a href="#sec2">SKILLS</a></li>
-                <li><a href="#sec3">PORTFOLIO</a></li>
-            </ul>
-        </header>
-        <div class="fixed-nav">
-            <ul class="move">
-                <li><a href="#"><img src="./img/home.png" alt="home icon 이미지"></a></li>
-                <li><a href="#sec1"><img src="./img/following.png" alt="ABOUT icon 이미지"></a></li>
-                <li><a href="#sec2"><img src="./img/edit.png" alt="SKILLS icon 이미지"></a></li>
-                <li><a href="#sec3"><img src="./img/apps.png" alt="PORTFOLIO icon 이미지"></a></li>
-            </ul>
-        </div>
-        <section class="sec main">
-            <img src="./img/stars.png" alt="별 이미지" id="stars">
-            <img src="./img/moon.png" alt="달 이미지" id="moon">
-            <img src="./img/mountains_behind.png" alt="산 뒷이미지" id="behind">
-            <h2 id="text">YERIM PORTFOLIO</h2>
-            <a href="#sec1" id="btn">Explore</a>
-            <img src="./img/mountains_front.png" alt="산 앞이미지" id="front">
-        </section>
-        <section id="sec1" class="sec about">
-            <div class="container">
-                <h2>ABOUT ME</h2>
-                <P>안녕하세요 현실에 안주하지 않고 늘 발전하고싶은 신입 웹퍼블리셔 김예림입니다.</P>
-                <div class="profile">
-                    <div class="img-box">
-                        <img src="./img/김예림 (2).jpg" alt="김예림 프로필 이미지">
-                        <p>
-                            # 책임감이 강해요! <br>
-                            # 협력적이에요! <br>
-                            # 배려심이 깊어요! <br>
-                            # ISFJ
-                        </p>
-                    </div>
+            <div class="login-container">
+                <div class="login">
                     <ul>
-                        <li><span>Birthday:</span> 1999. 06. 29</li>
-                        <li><span>Age:</span> 24</li>
-                        <li><span>Home:</span> 인천 서구 검단</li>
-                    </ul>
-                    <ul>
-                        <li><span>Phone:</span> 010 6749 2280</li>
-                        <li><span>Email:</span> soose99@naver.com</li>
-                        <li><span><a href="https://github.com/yellrim" target="_blank">Github</a></span></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">고객센터</a></li>
                     </ul>
                 </div>
-                <div class="education">
-                    <h3>Education:</h3>
+            </div>
+            <div class="nav-search">
+                <div class="nav">
+                    <a href="#"><img src="./img/logo-cubeme-text.png" alt="큐브미 로고 이미지"></a>
+                    <a href="#"><img class="img hidden" src="./img/logo-cubeme-symbol2.svg" alt="큐브미 로고 심볼 이미지"></a>
+                    <ul>
+                        <li class="subbar"><a href="#" title="모든 상품">모든 상품</a></li>
+                        <li><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
+                        <li><a href="#" title="이벤트">이벤트</a></li>
+                        <li><a href="#" title="매거진">매거진</a></li>
+                        <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
+                        <li><a href="#" title="매장안내">매장안내</a></li>
+                        <li><a href="#" title="고객센터">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="sub-nav hidden">
+                    <ul>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">워터플러스</a></li>
+                        <li><a href="#">콜라겐</a></li>
+                        <li><a href="#">다이어트</a></li>
+                        <li><a href="#">이너뷰티</a></li>
+                        <li><a href="#">키즈</a></li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <div class="search">
+                        <input id="search-text" type="text">
+                        <img src="./img/ico-shopping-cart.svg" alt="쇼핑 카드 이미지">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="slide">
+                <div class="slider-div">
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide01.jpg" alt="슬라이드 이미지1">
+                            <div class="slider-nav">1/6</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide02.jpg" alt="슬라이드 이미지2">
+                            <div class="slider-nav">2/6</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide03.jpg" alt="슬라이드 이미지3">
+                            <div class="slider-nav">3/6</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide04.jpg" alt="슬라이드 이미지4">
+                            <div class="slider-nav">4/6</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide05.jpg" alt="슬라이드 이미지5">
+                            <div class="slider-nav">5/6</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./img/slide06.jpg" alt="슬라이드 이미지6">
+                            <div class="slider-nav">6/6</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-button">
+                    <div class="next">
+                        <span></span>
+                    </div>
+                    <div class="prev">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="img">
+                    <a href="#">
+                        <span>Only for YOU! 오직 큐브미에서만!</span>
+                        <img src="./img/main02.jpg" alt="메인 이미지1">
+                    </a>
+                </div>
+                <div class="img">
+                    <a href="#">
+                        <span>#CUBEME Magazine</span>
+                        <img src="./img/main03.jpg" alt="메인 이미지2">
+                    </a>
+                </div>
+                <div class="img">
+                    <a href="#">
+                        <span>CUBEME Story</span>
+                        <img src="./img/main04.jpg" alt="메인 이미지3">
+                    </a>
+                </div>
+            </div>
+        </main>
+        <section class="sec hot-cube">
+            <div class="hot-tit">
+                <h1>가장 핫한 큐브</h1>
+                <p>
+                    6월 가장 인기 많은 베스트 큐브를 만나보세요. 
+                    <a href="#"><span>모두 보기(14)</span></a>
+                </p>
+            </div>
+            <div class="hot-shop-box">
+                <div class="hot-shop">
+                    <div class="hot-shop-img01">
+                        <a href="#">
+                            <div class="hot-shop-img-box">
+                                <img src="./img/main-under01.png" alt="가장 핫한 큐브 이미지1">
+                            </div>
+                            <div class="hot-shop-txt-box">
+                                <h2>슬림큐브 플러스 8주+콜라겐 30일 체험분+프로틴큐브20일+쉐이커1개</h2>
+                                <del>156,000원</del>
+                                <span>44%</span>
+                                <h3>87,360원</h3>
+                                <div class="star-box">
+                                    <div class="star"></div>
+                                    <ul>
+                                        <li>4.7</li>
+                                        <li>리뷰 791</li>
+                                    </ul>
+                                </div>
+                                <p>식약처 인증 멀티기능성 다이어트 서플리먼트!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hot-shop">
+                    <div class="hot-shop-img01">
+                        <a href="#">
+                            <div class="hot-shop-img-box">
+                                <img src="./img/main-under02.png" alt="가장 핫한 큐브 이미지2">
+                            </div>
+                            <div class="hot-shop-txt-box">
+                                <h2>★특가★ 콜라겐 큐브 파우더 120일(30일X4개)</h2>
+                                <del>80,000원</del>
+                                <span>70%</span>
+                                <h3>24,000원</h3>
+                                <div class="star-box">
+                                    <div class="star"></div>
+                                    <ul>
+                                        <li>4.9</li>
+                                        <li>리뷰 242</li>
+                                    </ul>
+                                </div>
+                                <p>새콤달콤한 복숭아맛 파우더</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hot-shop">
+                    <div class="hot-shop-img01">
+                        <a href="#">
+                            <div class="hot-shop-img-box">
+                                <img src="./img/main-under03.png" alt="가장 핫한 큐브 이미지3">
+                            </div>
+                            <div class="hot-shop-txt-box">
+                                <h2>★특가★ 유스큐브 120일(30일X4개)</h2>
+                                <del>80,000원</del>
+                                <span>70%</span>
+                                <h3>24,000원</h3>
+                                <div class="star-box">
+                                    <div class="star"></div>
+                                    <ul>
+                                        <li>4.9</li>
+                                        <li>리뷰 29</li>
+                                    </ul>
+                                </div>
+                                <p>지친 활력에 숨결을 불어넣는 법</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line">
+
+        </div>
+        <section class="sec wait-cube">
+            <div class="wait-tit">
+                <h1>잠시만요!</h1>
+                <p>큐브미몰에서만 제공되는 혜택이에요.</p>
+            </div>
+            <div class="wait-event-container">
+                <div class="wait-event-box">
+                    <div class="wait-event">
+                        <div class="icon01 wait-event-img-box01">
+                        </div>
+                        <div class="wait-event-txt-box">
+                            <p>
+                                회원가입시 <span>총 5,000원 상당 </span><br>
+                                혜택 및 <span>100원 쿠폰</span> 증정
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wait-event-box">
+                    <div class="wait-event">
+                        <div class="wait-event-img-box02">
+                        </div>
+                        <div class="wait-event-txt-box">
+                            <p>
+                                포토리뷰 작성시<br>
+                                <span>2,000P</span> 적립
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wait-event-box">
+                    <div class="wait-event">
+                        <div class="wait-event-img-box03">
+                        </div>
+                        <div class="wait-event-txt-box">
+                            <p>
+                                친구 추천시 나와 친구<br>
+                                <span>5,000P</span> 지급
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line">
+
+        </div>
+        <section class="sec event">
+            <div class="event-tit-box">
+                <h1>진행 중인 이벤트
+                    <a href="#">모두 보기(7)</a>
+                </h1>
+            </div>
+            <div class="event-flex-box">
+                <div class="event-container">
+                    <a href="#">
+                        <div class="event-box">
+                            <div class="event-img-box01">
+                                <img src="./img/event01.jpg" alt="이벤트 이미지1">
+                            </div>
+                            <div class="event-txt-box01">
+                                <h2>이너뷰티 신상 3종 특가</h2>
+                                <p>
+                                    2개 사면 57% 4개 사면 70%
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="event-container">
+                    <a href="#">
+                        <div class="event-box">
+                            <div class="event-img-box02">
+                                <img src="./img/event02.jpg" alt="이벤트 이미지2">
+                            </div>
+                            <div class="event-txt-box02">
+                                <h2>여름 바캉스를 위한 준비</h2>
+                                <p>
+                                    큐브미 슬림큐브플러스 스페셜 세일
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="article headline">
+            <div class="headline-tit">
+                <h1>We're making headlines</h1>
+            </div>
+            <div class="headline-img-box">
+                <div class="headline-item">
+                    <ul>
+                        <li><img src="./img/headline01.png" alt="소비자평가 최고의 브랜드 대상"></li>
+                        <li><img src="./img/headline02.png" alt="고객 사랑 브랜드 대상"></li>
+                        <li><img src="./img/headline03.png" alt="다이어트 부문브랜드 대상"></li>
+                    </ul>
+                </div>
+                <div class="headline-item">
+                    <ul>
+                        <li><img src="./img/headline04.png" alt="19년 레드닷 디자인 어워드"></li>
+                        <li><img src="./img/headline00.png" alt="공간용 이미지1"></li>
+                        <li><img src="./img/headline05.png" alt="20년 레드닷 디자인 어워드"></li>
+                    </ul>
+                </div>
+                <div class="headline-item">
+                    <ul>
+                        <li><img src="./img/headline06.png" alt="이너뷰티 브랜드 대상"></li>
+                        <li><img src="./img/headline00.png" alt="공간용 이미지2"></li>
+                        <li><img src="./img/headline07.png" alt="20 스타일러 맘 컨슈머 pick"></li>
+                    </ul>
+                </div>
+                <div class="headline-item">
+                    <ul>
+                        <li><img src="./img/headline08.png" alt="탄소배출절감"></li>
+                        <li><img src="./img/headline09.png" alt="장영실상 수상"></li>
+                        <li><img src="./img/headline10.png" alt="천삼화 특허기술"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="sec goods">
+            <div class="goods-tit-container">
+                <h1>이 상품 어때요?</h1>
+                <p>언제나 간편하고 즐겁게, 큐브미</p>
+            </div>
+            <div class="goods-goods-container">
+                <div class="goods-box">
+                    <a href="#">
+                        <div class="goods-img-box">
+                            <img src="./img/goods01.png" alt="콜라겐 큐브">
+                        </div>
+                        <div class="goods-txt-box">
+                            <h2>콜라겐 큐브 30일</h2>
+                            <del>34,000원</del>
+                            <span>25%</span>
+                            <h3>25,500원</h3>
+                            <div class="star-box">
+                                <div class="star"></div>
+                                <ul>
+                                    <li>4.7</li>
+                                    <li>리뷰 122</li>
+                                </ul>
+                            </div>
+                            <p>건강기능식품 인증! 새콤달콤 콜라겐 <br> 오늘도 칭찬해</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-box">
+                    <a href="#">
+                        <div class="goods-img-box">
+                            <img src="./img/goods02.png" alt="샤인 큐브">
+                        </div>
+                        <div class="goods-txt-box">
+                            <h2>샤인 큐브 30일</h2>
+                            <del>25,000원</del>
+                            <span>25%</span>
+                            <h3>25,500원</h3>
+                            <div class="star-box">
+                                <div class="star"></div>
+                                <ul>
+                                    <li>4.6</li>
+                                    <li>리뷰 205</li>
+                                </ul>
+                            </div>
+                            <p>햇살 가득 하루 에너지 플렉스!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-box">
+                    <a href="#">
+                        <div class="goods-img-box">
+                            <img src="./img/goods03.png" alt="유스 큐브">
+                        </div>
+                        <div class="goods-txt-box">
+                            <h2>유스 큐브 30일</h2>
+                            <del>20,000원</del>
+                            <span>25%</span>
+                            <h3>15,000원</h3>
+                            <div class="star-box">
+                                <div class="star"></div>
+                                <ul>
+                                    <li>4.8</li>
+                                    <li>리뷰 97</li>
+                                </ul>
+                            </div>
+                            <p>지친 활력에 숨결을 불어넣는 법</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-box">
+                    <a href="#">
+                        <div class="goods-img-box">
+                            <img src="./img/goods04.png" alt="워터뱅크 큐브">
+                        </div>
+                        <div class="goods-txt-box">
+                            <h2>워터뱅크 큐브 30일</h2>
+                            <del>28,000원</del>
+                            <span>25%</span>
+                            <h3>21,000원</h3>
+                            <div class="star-box">
+                                <div class="star"></div>
+                                <ul>
+                                    <li>4.7</li>
+                                    <li>리뷰 422</li>
+                                </ul>
+                            </div>
+                            <p>물, 마시지마세요</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods-box">
+                    <a href="#">
+                        <div class="goods-img-box">
+                            <img src="./img/goods05.png" alt="콜라겐 큐브 파우더">
+                        </div>
+                        <div class="goods-txt-box">
+                            <h2>콜라겐 큐브 파우더30일</h2>
+                            <del>20,000원</del>
+                            <span>30%</span>
+                            <h3>14,000원</h3>
+                            <div class="star-box">
+                                <div class="star"></div>
+                                <ul>
+                                    <li>4.9</li>
+                                    <li>리뷰 242</li>
+                                </ul>
+                            </div>
+                            <p>새콤달콤한 복숭아맛 파우더</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="banner">
+            <img src="./img/banner.jpg" alt="큐브미 메거진 배너">
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="left-container">
+                    <a href="#"><img src="./img/footer-logo.svg" alt="하단영역 로고이미지"></a>
+                    <ul>
+                        <li><a href="#">공지사항<em>·</em></a></li>
+                        <li><a href="#">1:1 문의<em>·</em></a></li>
+                        <li><a href="#">자주 묻는 질문<em>·</em></a></li>
+                        <li><a href="#">개인정보처리방침<em>·</em></a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
                     <p>
-                        2015.03 인천비즈니스고등학교 (항공비즈니스과) 입학 <br>
-                        2017.02 인천비즈니스고등학교 (항공비즈니스과) 졸업 <br>
-                        2021.11 연희직업전문학교 (프론트엔드&백엔드 웹앱 개발자 과정) 수강 <br>
-                        2022.05 연희직업전문학교 (프론트엔드&백엔드 웹앱 개발자 과정) 수료
+                        (주)아모레퍼시픽<em></em>대표이사 : 안세홍<em></em>사업자등록번호 : 106-86-43373<em></em>사업자정보 확인<br>
+                        서울특별시 용산구 한강대로 100<em></em>080-033-5454(쇼핑문의)<em></em>080-023-5454(제품문의)<br>
+                        통신판매업신고번호 : 2017-서울용산-1308호<em></em>건강기능식품판매업 영업신고증 제2017-0034039호<br>
+                        전자메일주소 : cubeme_mall@cubeme.co.kr<em></em>호스팅제공자 : (주)아모레퍼시픽<br>
+                        <br>
+                        Copyright 2020 CUBE ME. All rights reserved.
                     </p>
                 </div>
-            </div>
-        </section>
-        <section id="sec2" class="sec skills">
-            <div class="container">
-                <h2>SKILLS</h2>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 90%">90%</div>
-                    </div>
-                    <h3>> HTML5</h3>
-                </div>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 85%">85%</div>
-                    </div>
-                    <h3>> CSS3</h3>
-                </div>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 60%">60%</div>
-                    </div>
-                    <h3>> JAVASCRIPT</h3>
-                </div>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 50%">50%</div>
-                    </div>
-                    <h3>> jQUERY</h3>
-                </div>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 90%">90%</div>
-                    </div>
-                    <h3>> GIT</h3>
-                </div>
-                <div class="skill">
-                    <div class="progress">
-                        <div class="percent" style="width: 90%">90%</div>
-                    </div>
-                    <h3>> VS CODE</h3>
-                </div>
-            </div>
-        </section>
-        <section id="sec3" class="sec portfolio">
-            <div class="container">
-                <h2>PORTFOLIO</h2>
-                <div class="portfolio-box" id="portfolio1">
-                    <div class="img-box">
-                        <img src="./img/reg-tattoo.png" alt="레지포크타투 웹 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                            <a class="btn" href="https://yellrim.github.io/reg-tattoo/" target="_blank">PAGE</a>
-                            <a class="btn" href="https://github.com/yellrim/reg-tattoo" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen1()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history1" onclick="historyClose1()">
-                        <h3>> Reg-tattoo</h3>
+                <div class="right-container">
+                    <ul>
+                        <li><a href="#">Porducts</a></li>
+                        <li><a href="#">Brand</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <div class="right-txt-box">
+                        <h1>구매안전서비스 제공 안내</h1>
                         <p>
-                            타투이스트 지인의 허락을 받아 지인 인스타그램의 이미지를 사용하여 제작해 보았습니다. <br>
-                            디자인부터 웹페이지 구현까지 직접하였습니다. <br>
-                            @media를 사용해 반응형 웹페이지로 구현하였고, 페이지 메뉴를 기기 747이하 부터는 
-                            아코디언메뉴로 보일 수 있게 <br>JavaScript를 이용하여 구현하였습니다.
+                            저희 쇼핑몰은 고객님의 안전거래를 위해 무통장입금 또는 실시간 계좌이체 <br>
+                            주문에 대해 토스 페이먼츠 에스크로 구매안전서비스를 자동 적용 <br>
+                            하고있습니다.<br>
                         </p>
-                        <div class="btn-close" onclick="historyClose1()">
-                            <div>-</div>
+                        <a href="#">가입 사실 확인></a>
+                    </div>
+                    <div class="sns-container">
+                        <select>
+                            <option value="kor">KOR</option>
+                            <option value="eng">ENG</option>
+                            <option value="chn">CHN</option>
+                        </select>
+                        <div class="facebook">
+                            <a href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-box" id="portfolio2">
-                    <div class="img-box">
-                        <img src="./img/cubeme.png" alt="큐브미 웹 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                            <a class="btn" href="https://yellrim.github.io/cubeme/" target="_blank">PAGE</a>
-                            <a class="btn" href="https://github.com/yellrim/cubeme" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen2()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history2" onclick="historyClose2()">
-                        <h3>> Cubeme</h3>
-                        <p>
-                            기존 이너뷰티-큐브미 사이트를 퍼블리싱 하였습니다. <br>
-                            플러그인 Slick slide를 이용하여 슬라이드를 구현하였으며,<br>
-                            js로 스크롤에 반응하는 헤더를 구현하였습니다.
-                        </p>
-                        <div class="btn-close" onclick="historyClose2()">
-                            <div>-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-box" id="portfolio3">
-                    <div class="img-box">
-                        <img src="./img/jeju.png" alt="제주 투어 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                        <a class="btn" href="https://yellrim.github.io/jejutour/" target="_blank">PAGE</a>
-                        <a class="btn" href="https://github.com/yellrim/jejutour" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen3()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history3" onclick="historyClose3()">
-                        <h3>> Jeju tour</h3>
-                        <p>
-                            제주도 관광지를 내용으로 디자인부터 웹페이지 구현까지 직접하였습니다.<br>
-                            @media를 사용하여 반응형 웹페이지로 제작하였습니다. <br>
-                            플러그인 AOS를 사용하여 tour list 부분을 data-aos="flip-up"으로 구현했습니다.<br>
-                            플러그인 font awesome에서 아이콘을 가져와 사용하였습니다.
-                        </p>
-                        <div class="btn-close" onclick="historyClose3()">
-                            <div>-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-box" id="portfolio4">
-                    <div class="img-box">
-                        <img src="./img/hollys.png" alt="할리스 웹 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                            <a class="btn" href="https://yellrim.github.io/hollys/" target="_blank">PAGE</a>
-                            <a class="btn" href="https://github.com/yellrim/hollys" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen4()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history4" onclick="historyClose4()">
-                        <h3>> Hollys</h3>
-                        <p>
-                            프랜차이즈 할리스를 클론사이트하였습니다. <br>
-                            웹접근성의 스킵메뉴를 구현하였습니다. <br>
-                            플러그인 bxslider를 이용해 슬라이더를 구현하였고, <br>
-                            font awesome에서 아이콘을 가져와 사용하였습니다. <br>
-                        </p>
-                        <div class="btn-close" onclick="historyClose4()">
-                            <div>-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-box" id="portfolio5">
-                    <div class="img-box">
-                        <img src="./img/centreville.png" alt="센트레빌 웹 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                            <a class="btn" href="https://yellrim.github.io/centreville/" target="_blank">PAGE</a>
-                            <a class="btn" href="https://github.com/yellrim/centreville" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen5()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history5" onclick="historyClose5()">
-                        <h3>> Centreville</h3>
-                        <p>
-                            분양사이트 동부센트레빌을 퍼블리싱 하였습니다. <br>
-                            1장의 스프라이트 이미지로 지정한 좌표에 따라 모든 아이콘이 사용될 수 있게 구현하였습니다. <br>
-                            JavaScript를 사용하여 슬라이드를 구현하였습니다. <br> <br>
-                        </p>
-                        <div class="btn-close" onclick="historyClose5()">
-                            <div>-</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-box" id="portfolio6">
-                    <div class="img-box">
-                        <img src="./img/gguonail.png" alt="꾸오네일 웹 이미지"></img>
-                    </div>
-                    <div class="portfolio-btn">
-                            <a class="btn" href="https://yellrim.github.io/GGUOnail/" target="_blank">PAGE</a>
-                            <a class="btn" href="https://github.com/yellrim/GGUOnail" target="_blank">SOURCE</a>
-                        <div class="btn history" onclick="historyOpen6()">
-                            <div>HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="history-box" id="history6" onclick="historyClose6()">
-                        <h3>> GGuo nail</h3>
-                        <p>
-                            네일아티스트 동생의 허락을 받아 동생의 인스타그램의 이미지를 사용하여 제작해 보았습니다. <br>
-                            디자인부터 웹페이지 구현까지 직접하였으며, 서브 페이지도 제작되어있습니다. <br>
-                            플러그인 슬릭슬라이더를 이용해 메인슬라이더를 구현하였으며, font awesome에서 아이콘을 가져와 사용하였습니다. <br>
-                        </p>
-                        <div class="btn-close" onclick="historyClose6()">
-                            <div>-</div>
-                        </div>
+                        <div class="instar">
+                            <a href="">
+                                <img src="./img/footer-insta.svg" alt="인스타 링크 이미지">
+                            </a>
+                            </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
+    </div>
 
+        <!-- 제이쿼리 불러오기 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Slick 불러오기 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <!-- 외부 스크립트 -->
         <script src="./js/js.js"></script>
 
+        <script>
+            //nav
+            // window.addEventListener('scroll',function(){
+            //     var header = document.querySelector('header');
+            //     window.scrollY > 0 ? header.classList.add('sticky') : header.classList.remove('sticky');
+            // })
+            
+        </script>
 </body>
 </html>
