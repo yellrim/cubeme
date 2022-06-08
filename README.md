@@ -5,4 +5,4 @@
 
 [cubeme](https://yellrim.github.io/cubeme/)
 
-![cubeme이미지](https://github.com/yellrim/cubeme/blob/main/README.png)
+![cubeme이미지](https://github.com/yellrim/cubeme/blob/main/README%20(3).png)
