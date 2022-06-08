@@ -3,6 +3,6 @@
 디자인부터 웹페이지 구현까지 직접하였으며, 서브 페이지도 제작되어있습니다.
 
 
-[cubeme](https://yellrim.github.io/GGUOnail/)
+[cubeme](https://yellrim.github.io/cubeme/)
 
-![GGUO이미지](https://github.com/yellrim/GGUOnail/blob/main/README.png)
+![cubeme이미지](https://github.com/yellrim/cubeme/blob/main/README.png)
