@@ -28,29 +28,33 @@
                     <a href="#"><img src="./img/logo-cubeme-text.png" alt="큐브미 로고 이미지"></a>
                     <a href="#"><img class="img hidden" src="./img/logo-cubeme-symbol2.svg" alt="큐브미 로고 심볼 이미지"></a>
                     <ul>
-                        <li class="subbar"><a href="#" title="모든 상품">모든 상품</a></li>
-                        <li><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
-                        <li><a href="#" title="이벤트">이벤트</a></li>
-                        <li><a href="#" title="매거진">매거진</a></li>
-                        <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
-                        <li><a href="#" title="매장안내">매장안내</a></li>
-                        <li><a href="#" title="고객센터">고객센터</a></li>
+                        <li class="subbar" id="menu01"><a href="#" title="모든 상품">모든 상품</a></li>
+                        <li class="subbar"><a href="#" title="다이어트 WITH챌린지">다이어트 WITH챌린지</a></li>
+                        <li class="subbar"><a href="#" title="이벤트">이벤트</a></li>
+                        <li class="subbar" id="mag"><a href="#" title="매거진">매거진</a></li>
+                        <li class="subbar"><a href="#" title="브랜드 소개">브랜드 소개</a></li>
+                        <li class="subbar"><a href="#" title="매장안내">매장안내</a></li>
+                        <li class="subbar"><a href="#" title="고객센터">고객센터</a></li>
                     </ul>
-                </div>
-                <div class="sub-nav hidden">
-                    <ul class="sub-navul">
-                        <li><a href="#">베스트</a></li>
-                        <li><a href="#">워터플러스</a></li>
-                        <li><a href="#">콜라겐</a></li>
-                        <li><a href="#">다이어트</a></li>
-                        <li><a href="#">이너뷰티</a></li>
-                        <li><a href="#">키즈</a></li>
-                    </ul>
+                    <div class="smenu" id="smenu01">
+                        <ul class="sub-navul">
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">워터플러스</a></li>
+                            <li><a href="#">콜라겐</a></li>
+                            <li><a href="#">다이어트</a></li>
+                            <li><a href="#">이너뷰티</a></li>
+                            <li><a href="#">키즈</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="search-container">
                     <div class="search">
                         <input id="search-text" type="text">
-                        <img src="./img/ico-shopping-cart.svg" alt="쇼핑 카드 이미지">
+                        <img class="sear-svg" src="./img/search.svg" alt="돋보기">
+                        <div class="shop-ico-img-box">
+                            <div class="shop-ico-img">0</div>
+                            <img src="./img/ico-shopping-cart.svg" alt="쇼핑 카드 이미지">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,9 +209,7 @@
                 </div>
             </div>
         </section>
-        <div class="line">
-
-        </div>
+        <div class="line"></div>
         <section class="sec wait-cube">
             <div class="wait-tit">
                 <h1>잠시만요!</h1>
@@ -252,9 +254,7 @@
                 </div>
             </div>
         </section>
-        <div class="line">
-
-        </div>
+        <div class="line"></div>
         <section class="sec event">
             <div class="event-tit-box">
                 <h1>진행 중인 이벤트

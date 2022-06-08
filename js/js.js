@@ -3,6 +3,7 @@
     const headerLogo = document.querySelector('.header img');
     const headerminiLogo = document.querySelector('.header .img');
     const navMargin = document.querySelector('.nav-search');
+    const shopIco = document.querySelector('.shop-ico-img');
 
     const hiddenClassname = "hidden"
 
@@ -12,12 +13,14 @@
         headerLogo.classList.remove(hiddenClassname);
         headerminiLogo.classList.add(hiddenClassname);
         navMargin.style.marginTop = '70px';
+        shopIco.style.top  = '70px';
     }
     function frontscroll(){
         loginBar.classList.add(hiddenClassname);
         headerLogo.classList.add(hiddenClassname);
         headerminiLogo.classList.remove(hiddenClassname);
         navMargin.style.marginTop = '15px';
+        shopIco.style.top  = '17px';
     }
 
     window.addEventListener('scroll',function(){
@@ -31,27 +34,23 @@
         }
     })
 
-    // sub-nav
-    const navall = document.querySelector('.subbar');
-    const subNavul = document.querySelector('.sub-navul li a');
 
-    navall.addEventListener('mouseover',function(){
-        const subNav = document.querySelector('.sub-nav');
-        // subNavul.classList.remove("hidden");
-        subNav.classList.remove("hidden");
+    //sub-nav
+    $(document).on("mouseover",function(event){
+        //$("#log").text(event.pageX+","event.pageY);
+    });
+
+    $(document).ready(function(){
+
+        $(".subbar").mouseenter(function(){
+            var a = $(this).attr("id");
+            $('#s'+a).show();
+        })
+
+        $(".smenu").mouseleave(function(){
+            $(this).hide();
+        })
     })
-    subNavul.addEventListener('mouseover',function(){
-        const subNav = document.querySelector('.sub-nav');
-        subNav.classList.remove("hidden");
-    })
-    subNavul.addEventListener('mouseout',function(){
-        const subNav = document.querySelector('.sub-nav');
-        subNav.classList.add("hidden");
-    })
-    // navall.addEventListener('mouseout',function(){
-    //     const subNav = document.querySelector('.sub-nav');
-    //     subNav.classList.add("hidden");
-    // })
 
 
 
