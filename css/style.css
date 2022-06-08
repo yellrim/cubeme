@@ -264,8 +264,8 @@ input:focus{
 .hot-tit{
     margin: 90px 0 36px 0;
 }
-.hot-tit h1,
-.goods h1{
+.hot-tit h2,
+.goods h2{
     font-size: 28px;
     color: #333;
     font-weight: 700;
@@ -385,7 +385,7 @@ input:focus{
     text-align: center;
     margin: 90px 0 36px 0;
 }
-.wait-tit h1{
+.wait-tit h2{
     width: 150px;
     height: 50px;
     font-weight: 700;
@@ -475,7 +475,7 @@ input:focus{
     float: right;
     line-height: 3.5;
 }
-.event h1{
+.event h2{
     font-weight: 700;
     font-size: 28px;
     color: #333;
